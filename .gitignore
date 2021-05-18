@@ -1,3 +1,4 @@
 aalta
 *.o
 cnf.dimacs
+gmon.out

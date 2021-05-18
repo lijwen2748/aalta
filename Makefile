@@ -21,7 +21,7 @@ COSAFETYFILES  =  $(PARSERFILES) $(UTILFILES) formula/aalta_formula.cpp cosafety
 CC	    =   g++
 FLAG    = -I./ -I./minisat/ -I./formula/ -D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS -fpermissive
 DEBUGFLAG   =	-g -pg
-RELEASEFLAG =	-O2 
+RELEASEFLAG =	-O2
 
 aalta :	release
 

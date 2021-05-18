@@ -258,7 +258,7 @@ main (int argc, char** argv)
     aalta_formula* af;
     sat_solver solver;
   
-    af = aalta_formula(in).unique();
+    //af = aalta_formula(in).unique();
     
     af = aalta_formula(in).unique();
   	af = af->simplify ();
