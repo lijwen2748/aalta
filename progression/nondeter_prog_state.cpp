@@ -1162,6 +1162,7 @@
         //printf ("the invariant is\n %s\n", (AND(common))->to_string().c_str ());
         if (!check_until_never_satisfied (common_f)) {
             aalta_formula* check_f = aalta_formula (aalta_formula::And, negation_next (_formula), _flatted_formula).unique ();
+            check_f = aalta_formula (aalta_formula::And, check_f, _avoid).unique ();
             aalta_formula::af_prt_set P_common = check_f->SAT ();
             
             clear_f_node_map ();
